@@ -1,0 +1,16 @@
+:host {
+	display: flex;
+	flex-flow: column;
+	justify-content: stretch;
+	height: 100%;
+}
+
+mat-toolbar {
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+
+mat-drawer-container {
+	display: flex;
+	height: 100%;
+}
