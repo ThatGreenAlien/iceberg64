@@ -1,14 +1,35 @@
 <mat-toolbar color="primary">
-	<h1>{{title}}</h1>
 	<button mat-icon-button aria-label="Menu" (click)="drawer.toggle()">
 		<mat-icon>menu</mat-icon>
 	</button>
+	<h1><a href="#">{{title}}</a></h1>
+	<a mat-icon-button aria-label="Source" href="https://github.com/ThatGreenAlien/iceberg64" target="_blank" rel="noreferrer noopener">
+		<img src="assets/images/github-circle-white-transparent.svg" alt="View Source on GitHub">
+	</a>
 </mat-toolbar>
 <mat-drawer-container [hasBackdrop]="true">
 	<mat-drawer #drawer [mode]="'over'">
-		Drawer Content
+		<aside>
+			<h2>The Iceberg</h2>
+			<mat-accordion>
+				<mat-expansion-panel>
+					<mat-expansion-panel-header>
+						<mat-panel-title>Level 1</mat-panel-title>
+					</mat-expansion-panel-header>
+					<mat-nav-list>
+						<mat-list-item>
+							<a href="#">Level 1 Link</a>
+						</mat-list-item>
+					</mat-nav-list>
+				</mat-expansion-panel>
+			</mat-accordion>
+		</aside>
 	</mat-drawer>
 	<mat-drawer-content>
-		App Content
+		<main>
+			<h1>Under Construction</h1>
+			<p>Please check back later!</p>
+			<img src="assets/images/mario-sleeping.gif" alt="Mario Sleeping" width="200">
+		</main>
 	</mat-drawer-content>
 </mat-drawer-container>
